@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV Personality Prediction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e0e7ef 0%, #f8fafc 100%);
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+            color: #fff;
+            padding: 40px 0 30px 0;
+            text-align: center;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 12px rgba(100, 100, 200, 0.08);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.7em;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.15em;
+            opacity: 0.92;
+        }
+        .main-card {
+            background: #fff;
+            max-width: 480px;
+            margin: -40px auto 0 auto;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(80, 80, 120, 0.13);
+            padding: 36px 32px 32px 32px;
+            position: relative;
+            z-index: 2;
+        }
+        .upload-area {
+            border: 2.5px dashed #a084e8;
+            border-radius: 12px;
+            padding: 32px 18px;
+            text-align: center;
+            background: #f6f3ff;
+            margin-bottom: 24px;
+            transition: border-color 0.2s;
+        }
+        .upload-area:hover {
+            border-color: #6a82fb;
+        }
+        .upload-area input[type="file"] {
+            display: none;
+        }
+        .upload-label {
+            display: inline-block;
+            background: #a084e8;
+            color: #fff;
+            padding: 10px 28px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.08em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            transition: background 0.2s;
+        }
+        .upload-label:hover {
+            background: #6a82fb;
+        }
+        .btn {
+            background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+            color: #fff;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 7px;
+            font-size: 1.08em;
+            cursor: pointer;
+            margin-top: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(67, 206, 162, 0.08);
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+        }
+        .spinner {
+            display: none;
+            margin: 20px auto;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #a084e8;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+        .result-box {
+            margin-top: 30px;
+            padding: 24px 18px;
+            border-radius: 12px;
+            background: #f0f9ff;
+            border-left: 6px solid #43cea2;
+            box-shadow: 0 2px 12px rgba(67, 206, 162, 0.07);
+        }
+        .error-box {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff0f0;
+            border-left: 6px solid #e74c3c;
+            color: #c0392b;
+        }
+        .features-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .features-table th, .features-table td {
+            border: 1px solid #e0e0e0;
+            padding: 4px 8px;
+            font-size: 0.97em;
+        }
+        .features-table th {
+            background: #f8f9fa;
+        }
+        .prediction-label {
+            font-size: 1.25em;
+            font-weight: bold;
+            color: #185a9d;
+        }
+        .confidence-label {
+            color: #43cea2;
+            font-weight: bold;
+        }
+        .text-preview {
+            font-size: 0.97em;
+            color: #444;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #a084e8;
+            font-size: 1.05em;
+            letter-spacing: 1px;
+            padding-bottom: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CV Personality Prediction</h1>
+        <p>Upload your CV to get a personality analysis powered by AI</p>
+    </div>
+    <div class="main-card">
+        <form class="upload-form" id="cvForm" enctype="multipart/form-data">
+            <div class="upload-area" id="uploadArea">
+                <label class="upload-label" for="file">Choose File</label>
+                <input type="file" name="file" id="file" required>
+                <div id="fileName" style="margin-top:8px;color:#6a82fb;font-size:0.98em;"></div>
+                <div style="margin-top:10px;color:#888;font-size:0.97em;">Accepted: PDF, DOCX, TXT (max 16MB)</div>
+            </div>
+            <button class="btn" type="submit">Analyze</button>
+        </form>
+        <div class="spinner" id="spinner"></div>
+        <div id="result"></div>
+    </div>
+    <div class="footer">Made by Tamanna Kalariya</div>
+    <script>
+    const form = document.getElementById('cvForm');
+    const resultDiv = document.getElementById('result');
+    const spinner = document.getElementById('spinner');
+    const fileInput = document.getElementById('file');
+    const fileNameDiv = document.getElementById('fileName');
+    const uploadLabel = document.querySelector('.upload-label');
+    const uploadArea = document.getElementById('uploadArea');
+
+    fileInput.addEventListener('change', function() {
+        if (fileInput.files.length > 0) {
+            fileNameDiv.textContent = fileInput.files[0].name;
+            uploadLabel.textContent = 'Change File';
+        } else {
+            fileNameDiv.textContent = '';
+            uploadLabel.textContent = 'Choose File';
+        }
+    });
+
+    uploadArea.addEventListener('click', function(e) {
+        if (e.target !== fileInput && e.target !== uploadLabel) {
+            fileInput.click();
+        }
+    });
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        resultDiv.innerHTML = '';
+        spinner.style.display = 'block';
+        const formData = new FormData(form);
+        fetch('/upload', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            spinner.style.display = 'none';
+            if (data.error) {
+                resultDiv.innerHTML = `<div class='error-box'><b>Error:</b> ${data.error}</div>`;
+            } else {
+                let html = `<div class='result-box'>`;
+                if (data.prediction && data.prediction.error) {
+                    html += `<div class='error-box'><b>Prediction Error:</b> ${data.prediction.error}</div>`;
+                } else {
+                    html += `<div class='prediction-label'>Personality: <span class='confidence-label'>${data.prediction.personality || 'N/A'}</span></div>`;
+                    if (data.prediction.confidence) {
+                        html += `<div>Confidence: <span class='confidence-label'>${(data.prediction.confidence*100).toFixed(1)}%</span></div>`;
+                    }
+                }
+                if (data.features) {
+                    html += `<details><summary>Show Features</summary><table class='features-table'><tr><th>Feature</th><th>Value</th></tr>`;
+                    for (const [k, v] of Object.entries(data.features)) {
+                        html += `<tr><td>${k}</td><td>${typeof v === 'number' ? v.toFixed(4) : v}</td></tr>`;
+                    }
+                    html += `</table></details>`;
+                }
+                if (data.text) {
+                    html += `<details open><summary>Text Preview</summary><div class='text-preview'>${data.text.replace(/\n/g, '<br>')}</div></details>`;
+                }
+                html += `</div>`;
+                resultDiv.innerHTML = html;
+            }
+        })
+        .catch(err => {
+            spinner.style.display = 'none';
+            resultDiv.innerHTML = `<div class='error-box'><b>Unexpected error:</b> ${err}</div>`;
+        });
+    });
+    </script>
+</body>
+</html> 

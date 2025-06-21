@@ -1,0 +1,38 @@
+# Core libraries
+numpy
+pandas
+scikit-learn
+flask
+
+# Alternative to Keras/Transformers for neural networks
+torch
+torchvision
+
+# NLP libraries
+nltk
+spacy
+textstat
+
+# ML libraries
+xgboost
+
+# Computer Vision
+opencv-python
+Pillow
+pytesseract
+
+# Document Processing
+PyPDF2
+python-docx
+pdfplumber
+docx2txt
+
+# Web framework utilities
+werkzeug
+
+# Visualization
+matplotlib
+seaborn
+
+# Additional utilities
+pdfplumber

@@ -1,0 +1,101 @@
+name,age,education,experience_years,skills,personality
+Michael Smith,41,Bachelor,10,"Communication, Python, Teamwork, Data Analysis",Extrovert
+Alex Williams,39,Bachelor,17,"Data Analysis, Machine Learning, Communication, Project Management, Teamwork",Ambivert
+Katie Wilson,22,Bachelor,29,"Data Analysis, Teamwork, Communication",Introvert
+Jane Smith,58,Master,21,"Communication, Python, Data Analysis, Machine Learning, Project Management",Ambivert
+Jane Brown,42,PhD,26,"Data Analysis, Communication, Project Management",Introvert
+Sarah Wilson,28,Master,22,"Python, Machine Learning, Data Analysis, Communication",Extrovert
+Sarah Miller,40,Master,24,"Data Analysis, Communication, Python, Teamwork",Introvert
+Chris Smith,60,Bachelor,22,"Communication, Machine Learning, Python",Extrovert
+Jane Wilson,25,Master,16,"Python, Machine Learning, Project Management",Introvert
+John Smith,32,Master,20,"Python, Teamwork, Communication, Data Analysis",Introvert
+Alex Williams,24,Bachelor,40,"Data Analysis, Machine Learning, Project Management",Ambivert
+Katie Brown,57,Master,0,"Project Management, Python, Data Analysis",Introvert
+Sarah Jones,34,PhD,37,"Python, Machine Learning, Teamwork, Data Analysis",Ambivert
+Sarah Williams,49,Bachelor,39,"Data Analysis, Python",Introvert
+Chris Wilson,22,Master,32,"Teamwork, Project Management",Introvert
+Alex Williams,40,Bachelor,3,"Python, Data Analysis",Ambivert
+Alex Wilson,57,Bachelor,14,"Data Analysis, Teamwork, Communication, Project Management",Ambivert
+Katie Smith,24,Bachelor,8,"Python, Teamwork, Communication, Project Management",Ambivert
+Katie Jones,45,PhD,37,"Machine Learning, Data Analysis, Communication",Ambivert
+Katie Smith,39,Master,7,"Python, Data Analysis, Project Management",Ambivert
+Alex Davis,39,Bachelor,10,"Communication, Teamwork, Python, Machine Learning",Introvert
+John Jones,27,Master,36,"Teamwork, Python, Data Analysis, Communication",Extrovert
+Jane Jones,41,PhD,22,"Machine Learning, Data Analysis",Introvert
+Emily Smith,23,PhD,38,"Teamwork, Project Management, Data Analysis, Communication",Ambivert
+John Johnson,29,PhD,13,"Machine Learning, Data Analysis, Python, Teamwork",Extrovert
+Michael Johnson,49,Bachelor,39,"Communication, Data Analysis, Teamwork, Python",Introvert
+Katie Williams,22,Bachelor,27,"Data Analysis, Teamwork",Introvert
+Katie Davis,30,PhD,9,"Machine Learning, Communication, Python",Ambivert
+Alex Wilson,42,Bachelor,36,"Machine Learning, Data Analysis",Ambivert
+Michael Jones,35,Bachelor,33,"Data Analysis, Project Management, Machine Learning, Communication, Teamwork",Introvert
+Michael Smith,60,Bachelor,16,"Machine Learning, Project Management, Teamwork, Communication, Data Analysis",Ambivert
+Emily Johnson,36,Master,8,"Project Management, Machine Learning",Extrovert
+Michael Johnson,47,Master,23,"Python, Data Analysis, Machine Learning, Communication",Introvert
+Michael Davis,49,Master,34,"Project Management, Teamwork",Introvert
+Michael Wilson,36,PhD,17,"Machine Learning, Project Management",Extrovert
+Jane Miller,39,Master,30,"Project Management, Machine Learning",Introvert
+Katie Williams,53,Bachelor,12,"Communication, Project Management, Python, Teamwork",Extrovert
+Katie Williams,39,Master,32,"Machine Learning, Python, Communication",Introvert
+Michael Williams,56,Bachelor,8,"Python, Communication",Extrovert
+Michael Davis,51,PhD,8,"Project Management, Communication, Machine Learning, Data Analysis",Introvert
+Sarah Davis,55,PhD,30,"Communication, Python, Teamwork, Data Analysis",Ambivert
+Sarah Williams,57,Bachelor,30,"Data Analysis, Machine Learning",Introvert
+Chris Williams,50,Bachelor,34,"Python, Data Analysis, Communication",Introvert
+Sarah Davis,60,Master,19,"Data Analysis, Project Management, Communication, Teamwork",Extrovert
+Katie Brown,52,Bachelor,1,"Machine Learning, Project Management, Communication, Data Analysis, Teamwork",Ambivert
+John Jones,31,Bachelor,20,"Data Analysis, Communication, Python, Teamwork",Ambivert
+Michael Jones,56,Bachelor,14,"Machine Learning, Python",Extrovert
+Jane Davis,43,Master,8,"Teamwork, Data Analysis, Communication",Introvert
+Sarah Brown,25,Master,26,"Python, Data Analysis, Teamwork, Communication",Ambivert
+Chris Brown,46,Bachelor,33,"Python, Teamwork, Communication, Project Management, Machine Learning",Extrovert
+Jane Davis,48,Bachelor,23,"Machine Learning, Project Management, Teamwork",Introvert
+Michael Brown,32,Bachelor,3,"Project Management, Machine Learning, Communication",Ambivert
+Chris Wilson,33,Master,37,"Data Analysis, Python, Teamwork, Machine Learning, Communication",Introvert
+John Smith,54,Bachelor,3,"Machine Learning, Teamwork, Python, Communication",Ambivert
+Alex Williams,25,PhD,38,"Data Analysis, Machine Learning",Introvert
+Emily Jones,56,Bachelor,38,"Teamwork, Project Management",Ambivert
+Chris Johnson,59,Master,33,"Teamwork, Machine Learning, Communication, Python, Project Management",Introvert
+Chris Smith,24,PhD,36,"Teamwork, Machine Learning, Communication, Python, Data Analysis",Ambivert
+John Smith,27,PhD,4,"Machine Learning, Project Management, Python",Introvert
+Chris Johnson,51,PhD,31,"Project Management, Data Analysis, Teamwork, Python, Communication",Ambivert
+Alex Davis,27,Bachelor,30,"Machine Learning, Python, Communication, Teamwork",Ambivert
+Jane Brown,23,Bachelor,19,"Teamwork, Data Analysis, Project Management, Communication, Python",Extrovert
+Alex Davis,47,PhD,7,"Python, Teamwork, Communication, Machine Learning, Data Analysis",Introvert
+Chris Jones,30,PhD,28,"Teamwork, Data Analysis, Project Management, Communication, Python",Ambivert
+John Brown,26,PhD,28,"Machine Learning, Project Management, Teamwork",Extrovert
+Alex Williams,47,Master,22,"Communication, Data Analysis, Python, Project Management",Extrovert
+Katie Miller,26,Bachelor,35,"Teamwork, Python, Data Analysis, Communication",Extrovert
+Alex Miller,59,Bachelor,34,"Machine Learning, Project Management, Teamwork, Communication",Introvert
+Emily Smith,59,PhD,27,"Python, Project Management",Extrovert
+Emily Miller,22,Master,28,"Project Management, Python, Data Analysis, Machine Learning, Communication",Introvert
+Katie Johnson,49,Master,39,"Data Analysis, Teamwork, Machine Learning",Ambivert
+John Jones,23,Master,20,"Machine Learning, Project Management",Introvert
+Sarah Smith,25,PhD,26,"Data Analysis, Teamwork, Python, Communication",Introvert
+Katie Davis,24,Bachelor,33,"Python, Machine Learning, Project Management, Data Analysis, Communication",Ambivert
+Alex Williams,57,Master,12,"Teamwork, Project Management, Data Analysis",Ambivert
+Katie Wilson,52,PhD,21,"Data Analysis, Python, Communication, Machine Learning",Introvert
+Jane Jones,44,PhD,5,"Communication, Machine Learning",Extrovert
+Chris Williams,43,Master,40,"Python, Teamwork, Machine Learning, Communication, Project Management",Ambivert
+Katie Smith,42,Bachelor,21,"Communication, Teamwork, Machine Learning, Data Analysis",Introvert
+John Miller,39,Bachelor,1,"Communication, Python, Teamwork",Ambivert
+Sarah Johnson,49,Bachelor,27,"Communication, Machine Learning",Introvert
+Jane Wilson,60,PhD,31,"Teamwork, Communication, Python, Data Analysis",Ambivert
+Katie Davis,22,PhD,29,"Project Management, Communication, Teamwork, Machine Learning",Extrovert
+Sarah Smith,27,Master,10,"Teamwork, Communication, Data Analysis, Python, Machine Learning",Extrovert
+Chris Johnson,46,PhD,8,"Python, Machine Learning, Data Analysis",Extrovert
+Emily Brown,58,Bachelor,12,"Python, Machine Learning",Introvert
+Alex Brown,48,Bachelor,39,"Teamwork, Python",Extrovert
+Sarah Brown,53,Master,25,"Python, Data Analysis",Introvert
+Sarah Johnson,48,PhD,27,"Communication, Project Management, Python, Teamwork",Extrovert
+Sarah Davis,37,Master,2,"Teamwork, Data Analysis, Python",Introvert
+Chris Williams,36,Master,23,"Project Management, Data Analysis, Machine Learning, Teamwork, Python",Ambivert
+Emily Jones,53,Master,15,"Python, Machine Learning, Teamwork, Project Management",Introvert
+Emily Miller,27,PhD,15,"Machine Learning, Communication, Project Management, Python",Extrovert
+Emily Williams,58,Bachelor,35,"Teamwork, Project Management",Extrovert
+Sarah Smith,47,Master,40,"Project Management, Teamwork, Communication, Python, Data Analysis",Introvert
+Sarah Miller,26,Master,3,"Machine Learning, Project Management, Python",Ambivert
+Chris Jones,57,Bachelor,4,"Communication, Project Management, Teamwork",Ambivert
+Michael Smith,41,Master,3,"Python, Teamwork",Ambivert
+Emily Wilson,30,PhD,8,"Python, Machine Learning, Communication",Introvert
+John Williams,41,Master,18,"Machine Learning, Data Analysis",Ambivert
