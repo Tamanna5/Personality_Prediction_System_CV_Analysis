@@ -247,8 +247,6 @@ This project is open source and available under the MIT License.
 ## 👨‍💻 Author
 
 **Tamanna Kalariya**
-- **GitHub**: [Your GitHub Profile]
-- **Email**: [Your Email]
 
 ## 🙏 Acknowledgments
 
